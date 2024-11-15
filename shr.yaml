@@ -1,5 +1,5 @@
 ####################################
-# 更新时间：2024-11-14 09:40:08.586662
+# 更新时间：2024-11-15 09:40:05.846648
 ####################################
 port: 7890
 socks-port: 7891
@@ -7,38 +7,47 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
 proxies:
-  - {name: 🇬🇧 _GB_英国, server: 141.98.101.179, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: _GB_英国, server: 141.98.101.179, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 _GB_英国
+      - _GB_英国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇬🇧 _GB_英国
+      - _GB_英国
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - _GB_英国
+  - name: ⛔️ 广告拦截
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
+  - name: 🚫 运营劫持
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 _GB_英国
+      - _GB_英国
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -49,20 +58,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇬🇧 _GB_英国
+      - _GB_英国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇬🇧 _GB_英国
+      - _GB_英国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 _GB_英国
+      - _GB_英国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -78,7 +87,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 _GB_英国
+      - _GB_英国
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -373,7 +382,6 @@ rules:
   - DOMAIN-SUFFIX,biz5.kankan.com,🛑 全球拦截
   - DOMAIN-SUFFIX,c.algovid.com,🛑 全球拦截
   - DOMAIN-SUFFIX,cms.laifeng.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,da.mmarket.com,🛑 全球拦截
   - DOMAIN-SUFFIX,dotcounter.douyutv.com,🛑 全球拦截
   - DOMAIN-SUFFIX,g.uusee.com,🛑 全球拦截
   - DOMAIN-SUFFIX,gcdn.2mdn.net,🛑 全球拦截
@@ -9065,6 +9073,16 @@ rules:
   - DOMAIN-SUFFIX,yuanchengxiezuo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zbrushcn.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zhzzx.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+  - DOMAIN-KEYWORD,netflixdnstest,🎥 NETFLIX
+  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🎥 NETFLIX
+  - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
   - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体

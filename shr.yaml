@@ -1,5 +1,5 @@
 ####################################
-# 更新时间：2024-11-22 09:40:06.907423
+# 更新时间：2024-11-23 09:40:07.272838
 ####################################
 port: 7890
 socks-port: 7891
@@ -8,24 +8,15 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_美国, server: 185.143.232.200, port: 443, type: trojan, password: dTaXAtuoQF, sni: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir, network: ws, ws-opts: {path: /downloadgame, headers: {Host: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir}}}
-  - {name: _US_美国->🇩🇪_DE_德国, server: 185.143.234.200, port: 443, type: trojan, password: dTaXAtuoQF, sni: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir, network: ws, ws-opts: {path: /downloadgame, headers: {Host: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir}}}
-  - {name: _US_美国 2, server: 52.33.189.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _DE_德国, server: 45.87.175.164, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg}
-  - {name: _RU_俄罗斯, server: 217.30.10.18, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
-  - {name: _DE_德国 2, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
+  - {name: _US_美国, server: 52.33.189.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: _RU_俄罗斯, server: 193.124.22.253, port: 33068, type: ss, cipher: chacha20-ietf-poly1305, password: 3MgIhqwp4pjM8SKwixNkYZ}
   - {name: _PA_巴拿马, server: 138.186.142.4, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _US_美国->🇩🇪_DE_德国 2, server: 185.143.233.200, port: 443, type: trojan, password: dTaXAtuoQF, sni: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir, network: ws, ws-opts: {path: /downloadgame, headers: {Host: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir}}}
-  - {name: _DE_德国 3, server: 45.87.175.178, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
-  - {name: _US_美国 3, server: 3.76.127.3, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
   - {name: _CN_中国->🇺🇸_US_美国, server: 183.236.48.163, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: _IR_伊朗, server: 2.182.174.21, port: 9090, type: vmess, uuid: fddf88ed-8c70-42ad-c12e-5f40841e6f00, alterId: 0, cipher: auto, tls: false}
-  - {name: _RU_俄罗斯 2, server: 193.124.22.253, port: 33068, type: ss, cipher: chacha20-ietf-poly1305, password: 3MgIhqwp4pjM8SKwixNkYZ}
-  - {name: _DE_德国->🇰🇷_KR_韩国, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
+  - {name: _DE_德国, server: 45.87.175.164, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg}
+  - {name: _RU_俄罗斯 2, server: 194.87.31.160, port: 8081, type: vmess, uuid: a7e00c2f-411a-438f-9119-0f022a85a5e3, alterId: 0, cipher: auto, tls: false}
   - {name: _CN_中国->🇺🇸_US_美国 2, server: 183.236.51.23, port: 52112, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: _DE_德国 4, server: 45.87.175.171, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
   - {name: _RU_俄罗斯 3, server: 194.87.82.28, port: 12224, type: ss, cipher: chacha20-ietf-poly1305, password: 2fwufOmJ9ELfN4umzcHBfV}
-  - {name: _US_美国->🇩🇪_DE_德国 3, server: 185.143.235.200, port: 443, type: trojan, password: dTaXAtuoQF, sni: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir, network: ws, ws-opts: {path: /downloadgame, headers: {Host: nginx-4561f180e2-anssdsfsdf.apps.ir-northwest1.arvancaas.ir}}}
+  - {name: _DE_德国 2, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -33,46 +24,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -80,23 +53,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -116,23 +80,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -144,46 +99,28 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -191,23 +128,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -224,23 +152,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _US_美国
-      - _US_美国->🇩🇪_DE_德国
-      - _US_美国 2
-      - _DE_德国
       - _RU_俄罗斯
-      - _DE_德国 2
       - _PA_巴拿马
-      - _US_美国->🇩🇪_DE_德国 2
-      - _DE_德国 3
-      - _US_美国 3
       - _CN_中国->🇺🇸_US_美国
-      - _IR_伊朗
+      - _DE_德国
       - _RU_俄罗斯 2
-      - _DE_德国->🇰🇷_KR_韩国
       - _CN_中国->🇺🇸_US_美国 2
-      - _DE_德国 4
       - _RU_俄罗斯 3
-      - _US_美国->🇩🇪_DE_德国 3
+      - _DE_德国 2
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

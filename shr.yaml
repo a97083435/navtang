@@ -1,5 +1,5 @@
 ####################################
-# 更新时间：2024-11-27 09:40:06.629198
+# 更新时间：2024-11-28 09:40:08.153242
 ####################################
 port: 7890
 socks-port: 7891
@@ -8,103 +8,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_美国, server: 35.88.136.187, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _US_美国->🇨🇦_CA_加拿大, server: 190.93.245.16, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
-  - {name: _RU_俄罗斯, server: 213.108.22.109, port: 38753, type: ss, cipher: chacha20-ietf-poly1305, password: 6OAGLD+DOA6UcFp5Udf0r/UzyjwHV+yheNkoFDk6uL8=}
-  - {name: _US_美国 2, server: 52.43.67.42, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: _DE_德国, server: 193.108.119.230, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6}
+  - {name: _US_美国->🇨🇦_CA_加拿大, server: 190.93.244.228, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _RU_俄罗斯, server: 193.124.22.253, port: 33068, type: ss, cipher: chacha20-ietf-poly1305, password: 3MgIhqwp4pjM8SKwixNkYZ}
+  - {name: _US_美国, server: 69.50.95.53, port: 5498, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV}
+  - {name: _US_美国 2, server: 69.50.95.53, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: _US_美国 3, server: 44.244.25.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _US_美国 4, server: 34.210.25.46, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大, server: 190.93.246.178, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
-  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大 2, server: 190.93.246.120, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
-  - {name: _US_美国->🇨🇳_CN_中国, server: 44.242.211.17, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _DE_德国, server: 45.87.175.178, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
-  - {name: _US_美国 5, server: 54.37.12.70, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: _RU_俄罗斯 2, server: 193.124.22.253, port: 33068, type: ss, cipher: chacha20-ietf-poly1305, password: 3MgIhqwp4pjM8SKwixNkYZ}
-  - {name: _US_美国 6, server: 38.110.1.46, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: _US_美国 7, server: 54.37.12.70, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: _US_美国 8, server: 38.110.1.46, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大 3, server: 190.93.246.196, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
-  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大 4, server: 190.93.247.221, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
-  - {name: _US_美国->🇨🇦_CA_加拿大 2, server: 190.93.245.174, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
-  - {name: _SG_新加坡->🇺🇸_US_美国, server: 52.77.236.51, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: _US_美国 4, server: 69.50.95.53, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: _IE_爱尔兰, server: 3.255.33.42, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
+  - {name: _US_美国 5, server: 52.43.67.42, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: _US_美国->🇨🇦_CA_加拿大 2, server: 190.93.245.174, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
   - {name: _FR_法国->🇺🇸_US_美国, server: 62.210.88.22, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fHMmtjH3MuKYWYvGEqQpdH}
+  - {name: _DE_德国 2, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
+  - {name: _US_美国->🇹🇷_TR_土耳其, server: 51.195.220.179, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: vntxqHhPINXu5Ag6876fXO}
+  - {name: _US_美国 6, server: 69.50.95.53, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大, server: 190.93.246.178, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _US_美国 7, server: 190.93.245.168, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _US_美国->🇨🇦_CA_加拿大 3, server: 190.93.245.76, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _CN_中国->🇺🇸_US_美国, server: 183.236.51.23, port: 52112, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: _US_美国->🇨🇦_CA_加拿大 4, server: 190.93.245.103, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大 2, server: 190.93.247.221, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _US_美国 8, server: 69.50.95.53, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: _US_美国->🇨🇦_CA_加拿大 5, server: 172.64.175.88, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: c3.6016725.xyz}}}
+  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大 3, server: 190.93.246.196, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _US_美国->🇨🇦_CA_加拿大 6, server: 190.93.245.16, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
+  - {name: _CR_哥斯达黎加->🇨🇦_CA_加拿大 4, server: 190.93.247.23, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -123,26 +143,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -153,77 +178,92 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -239,26 +279,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
+      - _DE_德国
       - _US_美国->🇨🇦_CA_加拿大
       - _RU_俄罗斯
+      - _US_美国
       - _US_美国 2
       - _US_美国 3
       - _US_美国 4
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
-      - _US_美国->🇨🇳_CN_中国
-      - _DE_德国
+      - _IE_爱尔兰
       - _US_美国 5
-      - _RU_俄罗斯 2
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
-      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
       - _US_美国->🇨🇦_CA_加拿大 2
-      - _SG_新加坡->🇺🇸_US_美国
       - _FR_法国->🇺🇸_US_美国
+      - _DE_德国 2
+      - _US_美国->🇹🇷_TR_土耳其
+      - _US_美国 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大
+      - _US_美国 7
+      - _US_美国->🇨🇦_CA_加拿大 3
+      - _CN_中国->🇺🇸_US_美国
+      - _US_美国->🇨🇦_CA_加拿大 4
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 2
+      - _US_美国 8
+      - _US_美国->🇨🇦_CA_加拿大 5
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 3
+      - _US_美国->🇨🇦_CA_加拿大 6
+      - _CR_哥斯达黎加->🇨🇦_CA_加拿大 4
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

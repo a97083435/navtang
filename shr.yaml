@@ -1,5 +1,5 @@
 ####################################
-# 更新时间：2025-02-14 09:40:06.899066
+# 更新时间：2025-02-15 09:40:07.016433
 ####################################
 port: 7890
 socks-port: 7891
@@ -8,83 +8,31 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _US_美国, server: 34.220.100.94, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _US_美国->🇲🇩_MD_摩尔多瓦, server: 104.26.15.85, port: 443, type: trojan, password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3, sni: md1.safecdn.site, network: ws, ws-opts: {path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2, headers: {Host: md1.safecdn.site}}}
-  - {name: _US_美国->🇲🇩_MD_摩尔多瓦 2, server: 104.26.14.85, port: 443, type: trojan, password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3, sni: md1.safecdn.site, network: ws, ws-opts: {path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2, headers: {Host: md1.safecdn.site}}}
-  - {name: _US_美国 2, server: 38.114.123.245, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: _CN_中国->🇺🇸_US_美国, server: 219.135.231.205, port: 21019, type: trojan, password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5, skip-cert-verify: true}
-  - {name: _UA_乌克兰, server: 185.234.64.35, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: YTNjNDY5}
-  - {name: _US_美国->🇲🇩_MD_摩尔多瓦 3, server: 52.89.149.132, port: 443, type: trojan, password: !<str> 3747000103274291200, sni: grand-horse.adder289.quest}
-  - {name: _RU_俄罗斯->🇺🇸_US_美国, server: 185.231.233.173, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _MD_摩尔多瓦, server: 91.132.94.200, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _BG_保加利亚->🇺🇸_US_美国, server: 149.34.244.72, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: _IT_意大利, server: 37.143.129.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _RO_罗马尼亚, server: 185.193.49.88, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _UA_乌克兰 2, server: 85.90.194.160, port: 443, type: trojan, password: !<str> 3747000103274291200, sni: awaited-chicken.adder289.quest}
-  - {name: _GB_英国, server: 185.121.134.12, port: 20317, type: vmess, uuid: ed10802f-6cba-4ba8-932c-1d73a125c9d5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: _US_美国->🇬🇧_GB_英国, server: 172.67.73.163, port: 443, type: trojan, password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3, sni: md1.safecdn.site, network: ws, ws-opts: {path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2, headers: {Host: md1.safecdn.site}}}
+  - {name: _BG_保加利亚, server: 149.34.244.72, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: _IN_印度, server: 103.104.247.49, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -103,21 +51,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -128,62 +63,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -199,21 +95,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - _US_美国->🇲🇩_MD_摩尔多瓦
-      - _US_美国->🇲🇩_MD_摩尔多瓦 2
-      - _US_美国 2
-      - _CN_中国->🇺🇸_US_美国
-      - _UA_乌克兰
-      - _US_美国->🇲🇩_MD_摩尔多瓦 3
-      - _RU_俄罗斯->🇺🇸_US_美国
-      - _MD_摩尔多瓦
-      - _BG_保加利亚->🇺🇸_US_美国
-      - _IT_意大利
-      - _RO_罗马尼亚
-      - _UA_乌克兰 2
-      - _GB_英国
-      - _US_美国->🇬🇧_GB_英国
+      - _BG_保加利亚
+      - _IN_印度
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

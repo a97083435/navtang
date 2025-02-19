@@ -1,5 +1,5 @@
 ####################################
-# 更新时间：2025-02-18 09:40:06.650716
+# 更新时间：2025-02-19 09:40:08.828162
 ####################################
 port: 7890
 socks-port: 7891
@@ -8,99 +8,51 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _CH_瑞士, server: 84.17.53.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _UA_乌克兰, server: 185.234.64.35, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: YTNjNDY5}
-  - {name: _US_美国, server: 34.221.167.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _DK_丹麦, server: 185.186.79.53, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _US_美国 2, server: 185.47.252.251, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _US_美国 3, server: 54.212.56.86, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _RU_俄罗斯, server: 185.231.205.179, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: OTVlMzcy}
-  - {name: _GB_英国, server: 185.121.134.12, port: 20322, type: vmess, uuid: 70166ce6-326f-4b67-a296-a3253d8090fb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: _US_美国 4, server: 54.212.222.229, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _US_美国 5, server: 185.237.185.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _US_美国 6, server: 54.244.0.4, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _US_美国 7, server: 38.54.27.37, port: 995, type: ss, cipher: aes-256-gcm, password: MDA4MjFlMjAzOTdhMzViOWI1MTFhNGY3YWRjYmVl}
-  - {name: _UA_乌克兰 2, server: 176.103.53.105, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _DE_德国, server: 134.255.210.49, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _RO_罗马尼亚, server: 185.193.49.88, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _RU_俄罗斯 2, server: 195.58.49.42, port: 20321, type: vmess, uuid: b1e8e96b-3173-4917-87ca-878fdde67120, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: _RU_俄罗斯 3, server: 185.231.233.173, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _US_美国 8, server: 185.47.253.171, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: _GB_英国 2, server: 51.15.15.82, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: _DE_德国, server: 52.57.173.145, port: 443, type: trojan, password: !<str> 3782591447421952000, sni: patient-ghost.treefrog761.one, skip-cert-verify: true}
+  - {name: _IT_意大利, server: 37.143.129.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: _KR_韩国, server: 154.223.16.212, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: _RU_俄罗斯, server: 217.30.10.18, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+  - {name: _IN_印度, server: 103.104.247.47, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A}
+  - {name: _RU_俄罗斯 2, server: 185.231.233.173, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: _IR_伊朗, server: 188.253.22.10, port: 443, type: trojan, password: !<str> 3778399737045327872, sni: key-pangolin.treefrog761.one, skip-cert-verify: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -119,25 +71,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -148,74 +88,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -231,25 +135,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CH_瑞士
-      - _UA_乌克兰
-      - _US_美国
-      - _DK_丹麦
-      - _US_美国 2
-      - _US_美国 3
-      - _RU_俄罗斯
-      - _GB_英国
-      - _US_美国 4
-      - _US_美国 5
-      - _US_美国 6
-      - _US_美国 7
-      - _UA_乌克兰 2
       - _DE_德国
-      - _RO_罗马尼亚
+      - _IT_意大利
+      - _KR_韩国
+      - _RU_俄罗斯
+      - _IN_印度
       - _RU_俄罗斯 2
-      - _RU_俄罗斯 3
-      - _US_美国 8
-      - _GB_英国 2
+      - _IR_伊朗
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
